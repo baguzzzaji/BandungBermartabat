@@ -26,11 +26,11 @@ public class MosqueFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_places, container, false);
 
         final ArrayList<Place> mosques = new ArrayList<>();
-        mosques.add(new Place("Al-Furqon UPI", "This is the official mosque for Universitas Pendidikan Indonesia. The biggest on campus mosque.", R.drawable.masjid_alfurqon));
-        mosques.add(new Place("Salman ITB", "This is where the future engineer of Indonesia take a rest and pray to God in ITB.", R.drawable.masjid_salman));
-        mosques.add(new Place("Masjid Raya", "This one is the biggest mosque in Bandung and one of Bandung's landmark.", R.drawable.masjid_raya));
-        mosques.add(new Place("Masjid Pusdai", "This mosque is where the center of Islamic in Bandung takes place.", R.drawable.masjid_pusdai));
-        mosques.add(new Place("Masjid Agung Ciater", "People who visited hot spring in Ciater would pray in this mosque.", R.drawable.masjid_agungciater));
+        mosques.add(new Place(getActivity().getString(R.string.alfurqon_header), getActivity().getString(R.string.alfurqon_info), R.drawable.masjid_alfurqon));
+        mosques.add(new Place(getActivity().getString(R.string.salman_header), getActivity().getString(R.string.salman_info), R.drawable.masjid_salman));
+        mosques.add(new Place(getActivity().getString(R.string.masjidraya_header), getActivity().getString(R.string.masjidraya_info), R.drawable.masjid_raya));
+        mosques.add(new Place(getActivity().getString(R.string.pusdai_header), getActivity().getString(R.string.pusdai_info), R.drawable.masjid_pusdai));
+        mosques.add(new Place(getActivity().getString(R.string.ciater_header), getActivity().getString(R.string.ciater_info), R.drawable.masjid_agungciater));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), mosques);
 

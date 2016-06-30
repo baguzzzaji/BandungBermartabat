@@ -24,11 +24,11 @@ public class ParkFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_places, container, false);
 
         final ArrayList<Place> parks = new ArrayList<>();
-        parks.add(new Place("Taman Film", "This park is built for Bandung citizen so they could watch movies together.", R.drawable.taman_film));
-        parks.add(new Place("Taman Vanda", "This park is built near the Bank Indonesia, the national bank of Indonesia which have beautiful water.", R.drawable.taman_vanda));
-        parks.add(new Place("Taman Musik", "This park is built to accomodate musician that looking for place to find inspiration.", R.drawable.taman_musik));
-        parks.add(new Place("Taman Foto", "This park is built to help people of Bandung to learn photography.", R.drawable.taman_foto));
-        parks.add(new Place("Taman Lansia", "This park is built for elder so they have a place to hangout safely", R.drawable.taman_lansia));
+        parks.add(new Place(getActivity().getString(R.string.tamanfilm_header), getActivity().getString(R.string.tamanfilm_info), R.drawable.taman_film));
+        parks.add(new Place(getActivity().getString(R.string.tamanvanda_header), getActivity().getString(R.string.tamanvanda_info), R.drawable.taman_vanda));
+        parks.add(new Place(getActivity().getString(R.string.tamanmusik_header), getActivity().getString(R.string.tamanmusik_info), R.drawable.taman_musik));
+        parks.add(new Place(getActivity().getString(R.string.tamanfoto_header), getActivity().getString(R.string.tamanfoto_info), R.drawable.taman_foto));
+        parks.add(new Place(getActivity().getString(R.string.tamanlansia_header), getActivity().getString(R.string.tamanlansia_info), R.drawable.taman_lansia));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), parks);
 

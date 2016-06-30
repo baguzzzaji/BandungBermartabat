@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bandung Bermartabat</string>
+    <string name="place_header_placeholder_text">Universitas Pendidikan Indonesia</string>
+    <string name="place_info_placeholder_text">Kampus Pendidikan Nomor Satu di Bandung</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="taman_jomblo_info">This park built for every single person out there to hangout.</string>
+</resources>
